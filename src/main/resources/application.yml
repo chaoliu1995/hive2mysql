@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: test
+hive.url: jdbc:hive2://10.140.6.12:10000/applogsdb
+server:
+  tomcat:
+    access-log-enabled: true
+    max-threads: 100
+    min-spare-threads: 10
+    uri-encoding: UTF-8
+  port: 29537
+http:
+  encoding:
+    force: true
+    charset: UTF-8
+    enabled: true
