@@ -8,8 +8,11 @@ package com.chaoliu1995.hive2mysql.service;
 public interface InsertService {
 
     /**
-     * 导入数据
+     * 导出 hive 数据到 MySQL
      * @param tableName
+     * @param sql
+     * @param hiveOrderByCol
+     * @throws Exception
      */
-    void insert(String tableName) throws Exception;
+    void insert(String tableName,String sql,String hiveOrderByCol) throws Exception;
 }
