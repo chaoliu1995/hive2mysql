@@ -1,19 +1,11 @@
-package com.chaoliu1995.hive2mysql.util;
+package com.example;
 
-import lombok.Data;
-
-/**
- * @Author: ChaoLiu
- * @Description:
- * @Date: 2018/11/15 11:43
- */
-@Data
 public class Pager {
 
     /**
      * 默认每页的数据量
      */
-    public static final Integer DEFAULT_PAGE_SIZE = 2000;
+    public static final Integer DEFAULT_PAGE_SIZE = 100;
 
     /**
      * 默认当前页
@@ -23,7 +15,7 @@ public class Pager {
     /**
      * 最大每页数量
      */
-    private static final Integer MAX_PAGE_SIZE = 2000;
+    private static final Integer MAX_PAGE_SIZE = 10000;
 
     private Integer pageSize;	//每页的数据量
 
@@ -84,5 +76,15 @@ public class Pager {
         }
     }
 
-}
+    public Integer getStartNum() {
+        return startNum;
+    }
 
+    public Integer getEndNum() {
+        return endNum;
+    }
+
+    public Integer getPageTotal() {
+        return pageTotal;
+    }
+}

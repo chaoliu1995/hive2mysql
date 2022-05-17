@@ -1,4 +1,0 @@
-spring:
-  profiles:
-    active: test
-hive.url: jdbc:hive2://10.140.6.12:10000/applogsdb
